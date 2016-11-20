@@ -5,7 +5,8 @@ CREATE TABLE SUCO
 	Lydo			nvarchar(MAX),
 	Ngaytao			datetime,
 	Trangthai		varchar(1),
-	Huonggiaiquyet	nvarchar(MAX)
+	Huonggiaiquyet	nvarchar(MAX),
+	Status          varchar(1)
 )
 
 CREATE TABLE NHANVIEN
@@ -13,7 +14,8 @@ CREATE TABLE NHANVIEN
 	MaNV			int identity(1,1) primary key,
 	TenNV			nvarchar(30),
 	CodeNV			nvarchar(20),
-	ChucVu			nvarchar(20)
+	ChucVu			nvarchar(20),
+	Status          varchar(1)
 )
 
 CREATE TABLE THANHVIEN
@@ -26,13 +28,16 @@ CREATE TABLE THANHVIEN
 	SDT				varchar(15),
 	Tongtientichluy	int,
 	Diemtichluy		int,
-	Diachi			nvarchar(100)
+	Diachi			nvarchar(100),
+	Status          varchar(1),
+
 )
 
 CREATE TABLE LOAITHUCUONG
 (
 	MaLoaiTU		int identity(1,1) primary key,
-	TenTU			nvarchar(30)
+	TenTU			nvarchar(30),
+	Status          varchar(1)
 )
 
 CREATE TABLE THUCUONG
@@ -40,7 +45,8 @@ CREATE TABLE THUCUONG
 	MaTU			int identity(1,1) primary key,
 	TenTU			nvarchar(30),
 	MaLoaiTU		int ,
-	Thanhtien		int
+	Thanhtien		int ,
+	Status          varchar(1)
 )
 
 CREATE TABLE HOADON
@@ -50,7 +56,8 @@ CREATE TABLE HOADON
 	Tongtienbd		int,
 	Giagiam			int,
 	Thanhtien		int,
-	MaNV			int 
+	MaNV			int,
+	Status          varchar(1)
 )
 
 CREATE TABLE CHITIETHOADON
@@ -60,7 +67,7 @@ CREATE TABLE CHITIETHOADON
 	MaTU			int,
 	Giatien			int,
 	Soluong			int,
-	Thanhtien		int
+	Thanhtien		int,
 )
 
 CREATE TABLE KHUYENMAI
@@ -71,14 +78,16 @@ CREATE TABLE KHUYENMAI
 	Ngaytao			datetime,
 	Trangthai		varchar(1),
 	Ngaysudung		datetime,
-	MaHDsudung		int 
+	MaHDsudung		int ,
+	Status          varchar(1)
 )
 
 CREATE TABLE PHIEUYEUCAU
 (
 	MaPYC			int identity(1,1) primary key,
 	Ngaytao			datetime,
-	MaNV			int 
+	MaNV			int ,
+	Status          varchar(1)
 )
 
 CREATE TABLE NGUYENVATLIEU
@@ -87,7 +96,8 @@ CREATE TABLE NGUYENVATLIEU
 	TenNVL			nvarchar(30),
 	Soluong			int,
 	Gia				int,
-	Tinhtrang		varchar(1)
+	Tinhtrang		varchar(1),
+	Status          varchar(1)
 )
 
 CREATE TABLE CTPHIEUYEUCAU
@@ -95,7 +105,7 @@ CREATE TABLE CTPHIEUYEUCAU
 	MaCTPYC			int identity(1,1) primary key,
 	MaPYC			int ,
 	MaNL			int ,
-	Soluong			int
+	Soluong			int ,
 )
 
 CREATE TABLE PHIEUCHI
@@ -105,7 +115,9 @@ CREATE TABLE PHIEUCHI
 	Ngaytao			datetime,
 	Lydo			nvarchar(MAX),
 	Sotien			int,
-	MaNV			int 
+	MaNV			int,
+	Status          varchar(1)
+
 )
 
 CREATE TABLE PHIEUKIEMKE
@@ -113,7 +125,8 @@ CREATE TABLE PHIEUKIEMKE
 	MaPKK			int identity(1,1) primary key,
 	CodePKK			varchar(10),
 	Ngaytao			datetime,
-	MaNV			int 
+	MaNV			int ,
+	Status          varchar(1)
 )
 
 CREATE TABLE CTPHIEUKIEMKE
@@ -123,5 +136,26 @@ CREATE TABLE CTPHIEUKIEMKE
 	MaNL			int ,
 	Soluongtrongkho int,
 	Soluongthucte	int,
-	Lydochenhlech	nvarchar(MAX)
+	Lydochenhlech	nvarchar(MAX),
+	Status          varchar(1)
+)
+
+CREATE TABLE HOADONNHAPHANG
+(
+	MAHDNHAPHANG	int identity(1,1) primary key,
+	CODEHD          varchar(30),
+	TONGTIEN		int,
+	NGAYNHAP        date,
+	MANVXACNHAN     int,
+	STATUS          varchar(1)
+)
+
+CREATE TABLE CTHOADONNHAPHANG
+(
+	MACTHD			int identity(1,1) primary key,
+	MAHDNHAPHANG    int,
+	MANVL			int,
+	SL      		int,
+	GIA     		int,
+	TONGTIEN 		int,
 )
