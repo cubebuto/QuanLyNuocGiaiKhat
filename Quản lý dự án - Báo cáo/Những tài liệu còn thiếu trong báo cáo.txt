@@ -1,10 +1,10 @@
 ﻿Thư mục 1: Khởi động
-- Ma trận trọng số các chức năng  			---Slide 8
-- Mô tả công việc người quản trị dự án 			---Slide 9
+- Ma trận trọng số các chức năng  			---Slide 8++++
+- Mô tả công việc người quản trị dự án 			---Slide 9++++
 - Tính NPV, ROI, Payback (Số liệu giả) 			---Slide 10
-- Tuyên bố dự án 					---Slide 11
+- Tuyên bố dự án 					---Slide 11++++
 Thư mục 2: Lập kế hoạch
-- Dự đoán chi phí trả cho nhân viên 			---slide 15
+- Dự đoán chi phí trả cho nhân viên 			---slide 15 ++++++
 - Lập ma trận xác suất và tác động 			---slide 23
 Thư mục 3: Thực thi
 - Báo cáo tiến độ dự án  				---Slide 27
