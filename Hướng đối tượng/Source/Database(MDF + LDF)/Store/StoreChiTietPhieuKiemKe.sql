@@ -4,7 +4,6 @@ CREATE PROCEDURE CTPHIEUKIEMKE_Ins
 	@Soluongtrongkho	int = null,
 	@Soluongthucte		int = null,
 	@Lydochenhlech		nvarchar(MAX) = null,
-	@Status				varchar(1) = null
 AS
 	BEGIN TRANSACTION 
 	INSERT INTO CTPHIEUKIEMKE(
@@ -13,14 +12,12 @@ AS
 	[Soluongtrongkho],
 	[Soluongthucte],
 	[Lydochenhlech],
-	[Status])
 	VALUES
 	(@MaPKK,
 	@MaNL,
 	@Soluongtrongkho,
 	@Soluongthucte,
 	@Lydochenhlech,
-	@Status)
 	COMMIT TRANSACTION
 		SELECT SCOPE_IDENTITY() as Result
 		RETURN '1'
@@ -34,7 +31,6 @@ CREATE PROCEDURE CTPHIEUKIEMKE_Upd
 	@Soluongtrongkho	int = null,
 	@Soluongthucte		int = null,
 	@Lydochenhlech		nvarchar(MAX) = null,
-	@Status				varchar(1) = null
 AS
 	BEGIN TRANSACTION
 	UPDATE CTPHIEUKIEMKE SET
@@ -43,7 +39,6 @@ AS
 	[Soluongtrongkho] = @Soluongtrongkho,
 	[Soluongthucte] = @Soluongthucte,
 	[Lydochenhlech] = @Lydochenhlech,
-	[Status] = @Status
 	WHERE [MaCTPKK] = @MaCTPKK
 	COMMIT TRANSACTION
 		SELECT '1' as Result
