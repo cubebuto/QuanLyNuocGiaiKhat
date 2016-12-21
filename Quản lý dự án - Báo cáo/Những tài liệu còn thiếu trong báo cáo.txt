@@ -1,17 +1,30 @@
 ﻿Thư mục 1: Khởi động
 - Ma trận trọng số các chức năng  			---Slide 8++++
 - Mô tả công việc người quản trị dự án 			---Slide 9++++
-- Tính NPV, ROI, Payback (Số liệu giả) 			---Slide 10
+- Tính NPV, ROI, Payback (Số liệu giả) 			---Slide 10++++
 - Tuyên bố dự án 					---Slide 11++++
 Thư mục 2: Lập kế hoạch
 - Dự đoán chi phí trả cho nhân viên 			---slide 15 ++++++
 - Lập ma trận xác suất và tác động 			---slide 23
 Thư mục 3: Thực thi
 - Báo cáo tiến độ dự án  				---Slide 27
+- Chương trình sourcecode
+- Tài liệu hướng dẫn sử dụng
 Thư mục 4: Kiểm soát
 - Giải pháp ngăn chặn vượt phạm vi và gia tăng chi phí 	---Slide 31
-- Cập nhật NPV, ROI, payback 				---Slide 32
+- Cập nhật NPV, ROI, payback 				---Slide 32+++++++
 Thư mục 5: Kết thúc
+- Viết báo cáo tổng kết					---Slide 34
+- Viết bài học kinh nghiệm				---Slide 36
+- Báo cáo tổng kết					---Slide 38
+
+
+Cong việc chưa làm
+- Lập ma trận xác suất và tác động 			---slide 23
+- Báo cáo tiến độ dự án  				---Slide 27
+- Chương trình sourcecode
+- Tài liệu hướng dẫn sử dụng
+- Giải pháp ngăn chặn vượt phạm vi và gia tăng chi phí 	---Slide 31
 - Viết báo cáo tổng kết					---Slide 34
 - Viết bài học kinh nghiệm				---Slide 36
 - Báo cáo tổng kết					---Slide 38
